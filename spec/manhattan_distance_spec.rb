@@ -12,4 +12,8 @@ describe '#manhattan_distance' do
     it "takes [3, 1], [1, 1] and returns 2" do
       expect(manhattan_distance([3, 1], [1, 1])).to eq(2)
     end
+
+    it "takes [1, 1], [0, 0] and returns 2" do
+      expect(manhattan_distance([1, 1], [0, 0])).to eq(2)
+    end
 end
